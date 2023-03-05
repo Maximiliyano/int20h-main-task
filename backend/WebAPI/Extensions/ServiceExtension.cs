@@ -8,5 +8,6 @@ public static class ServiceExtension
     {
         services.AddScoped<UserService>();
         services.AddScoped<ProjectService>();
+        services.AddScoped<NotificationService>();
     }
 }
