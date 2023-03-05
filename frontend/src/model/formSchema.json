@@ -1,0 +1,336 @@
+{
+	"title": "",
+	"sections": [
+		{
+			"id": 3,
+			"name": "Personal Details",
+			"description": "Details about you",
+			"isMultiRecord": false,
+			"fields": [
+				{
+					"id": "job_title",
+					"label": "Job Title",
+					"type": "form-text",
+					"validations": "required|alpha_spaces",
+					"class": "",
+					"col": "m6"
+				},
+				{
+					"id": "photo_url",
+					"label": "Photo URL",
+					"type": "form-text",
+					"validations": "url: {require_protocol: true }",
+					"class": "",
+					"col": "m6"
+				},
+				{
+					"id": "first_name",
+					"label": "First Name",
+					"type": "form-text",
+					"validations": "required|alpha_spaces",
+					"class": "",
+					"col": "m6"
+				},
+				{
+					"id": "last_name",
+					"label": "Last Name",
+					"type": "form-text",
+					"validations": "required|alpha_spaces",
+					"class": "",
+					"col": "m6"
+				},
+				{
+					"id": "email",
+					"label": "Email",
+					"type": "form-text",
+					"validations": "email",
+					"class": "",
+					"col": "m6"
+				},
+				{
+					"id": "phone",
+					"label": "Phone",
+					"type": "form-telephone",
+					"class": "",
+					"col": "m6"
+				},
+				{
+					"id": "dob",
+					"label": "Date of birth",
+					"type": "form-text",
+					"validations": "date_format:dd/MM/yyyy",
+					"class": "",
+					"col": "m6"
+				},
+				{
+					"id": "pd_city",
+					"label": "City",
+					"type": "form-text",
+					"validations": "alpha_spaces",
+					"class": "",
+					"col": "m6"
+				}
+			]
+		},
+		{
+			"id": 4,
+			"name": "Professional Summary",
+			"description": "Include 2-3 clear sentences about your overall experience",
+			"isMultiRecord": false,
+			"fields": [
+				{
+					"id": "summary",
+					"label": "",
+					"type": "form-text-area",
+					"class": "",
+					"col": "m12"
+				}
+			]
+		},
+		{
+			"id": 5,
+			"name": "Employment history",
+			"description": "Include your last 10 years of relevant experience and dates in this section. List your most recent position first",
+			"isMultiRecord": true,
+			"deleteConfirmationRequired": true,
+			"fields": [
+				{
+					"id": "employment_history_job_title",
+					"label": "Job Title",
+					"type": "form-group-text",
+					"validations": "required",
+					"visible": false,
+					"class": "",
+					"col": "m6"
+				},
+				{
+					"id": "employer",
+					"label": "Employer",
+					"type": "form-group-text",
+					"validations": "required",
+					"visible": false,
+					"class": "",
+					"col": "m6"
+				},
+				{
+					"id": "start_date",
+					"label": "Start date",
+					"type": "form-group-text",
+					"validations": "required",
+					"visible": false,
+					"class": "",
+					"col": "m6"
+				},
+				{
+					"id": "to_date",
+					"label": "End date",
+					"type": "form-group-text",
+					"validations": "required",
+					"visible": false,
+					"class": "",
+					"col": "m6"
+				},
+				{
+					"id": "city",
+					"label": "City",
+					"type": "form-group-text",
+					"validations": "required",
+					"visible": false,
+					"class": "",
+					"col": "m6"
+				},
+				{
+					"id": "employment_summary",
+					"label": "",
+					"placeholder": "Description",
+					"type": "form-text-area",
+					"validations": "required",
+					"visible": false,
+					"class": "",
+					"col": "m12"
+				},
+				{
+					"id": "btn-show-employment-fields",
+					"label": "Add employment",
+					"type": "form-action",
+					"actionType": "show",
+					"visible": true,
+					"action": {
+						"prop": "visible",
+						"value": true,
+						"fields": [
+							"employment_history_job_title",
+							"employer",
+							"start_date",
+							"to_date",
+							"city",
+							"employment_summary",
+							"btn-add-employment"
+						]
+					},
+					"class": "",
+					"col": "m12"
+				},
+				{
+					"id": "btn-add-employment",
+					"label": "Add employment",
+					"type": "form-action",
+					"actionType": "add",
+					"class": "center-align",
+					"visible": false,
+					"col": "m12"
+				}
+			]
+		},
+		{
+			"id": 6,
+			"name": "Education",
+			"isMultiRecord": true,
+			"deleteConfirmationRequired": true,
+			"description": "If relevant, include your most recent educational achievements and the dates here",
+			"fields": [
+				{
+					"id": "school",
+					"label": "School",
+					"type": "form-group-text",
+					"validations": "required",
+					"visible": false,
+					"class": "",
+					"col": "m6"
+				},
+				{
+					"id": "degree",
+					"label": "Degree",
+					"type": "form-group-text",
+					"validations": "required",
+					"visible": false,
+					"class": "",
+					"col": "m6"
+				},
+				{
+					"id": "school_start_date",
+					"label": "Start date",
+					"type": "form-group-text",
+					"validations": "required",
+					"visible": false,
+					"class": "",
+					"col": "m6"
+				},
+				{
+					"id": "school_end_date",
+					"label": "End date",
+					"type": "form-group-text",
+					"validations": "required",
+					"visible": false,
+					"class": "",
+					"col": "m6"
+				},
+				{
+					"id": "school_city",
+					"label": "City",
+					"type": "form-group-text",
+					"validations": "required",
+					"visible": false,
+					"class": "",
+					"col": "m6"
+				},
+				{
+					"id": "education_summary",
+					"label": "",
+					"placeholder": "Description",
+					"type": "form-text-area",
+					"validations": "required",
+					"visible": false,
+					"class": "",
+					"col": "m12"
+				},
+				{
+					"id": "btn-add-education",
+					"label": "Add education",
+					"type": "form-action",
+					"actionType": "add",
+					"class": "center-align",
+					"visible": false,
+					"col": "m12"
+				},
+				{
+					"id": "btn-show-education-fields",
+					"label": "Add Education",
+					"type": "form-action",
+					"actionType": "show",
+					"visible": true,
+					"action": {
+						"prop": "visible",
+						"value": true,
+						"fields": [
+							"school",
+							"degree",
+							"school_start_date",
+							"school_end_date",
+							"school_city",
+							"education_summary",
+							"btn-add-education"
+						]
+					},
+					"class": "",
+					"col": "m12"
+				}
+			]
+		},
+		{
+			"id": 7,
+			"name": "Skills",
+			"isMultiRecord": true,
+			"deleteConfirmationRequired": false,
+			"description": "You can enter comma separated values to add multiple skills at once",
+			"fields": [
+				{
+					"id": "skill",
+					"label": "Skill name",
+					"type": "form-group-text",
+					"class": "",
+					"col": "m9"
+				},
+				{
+					"id": "btn-add-skill",
+					"label": "Add skill",
+					"type": "form-action",
+					"class": "mt-2",
+					"col": "m3"
+				}
+			]
+		},
+		{
+			"id": 8,
+			"name": "Website and Social Links",
+			"isMultiRecord": true,
+			"deleteConfirmationRequired": false,
+			"description": "You can add links to websites you want hiring managers to see! Perhaps It will be  a link to your portfolio, LinkedIn profile, or personal website",
+			"fields": [
+				{
+					"id": "label",
+					"label": "Label",
+					"type": "form-group-text",
+					"validations": "required",
+					"class": "",
+					"col": "m4"
+				},
+				{
+					"id": "link",
+					"label": "Link",
+					"type": "form-group-text",
+					"validations": "required|url",
+					"class": "",
+					"col": "m6"
+				},
+				{
+					"id": "btn-add-link",
+					"label": "Add link",
+					"type": "form-action",
+					"class": "mt-2",
+					"col": "m2"
+				}
+			]
+		}
+	]
+}
