@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using WebAPI.Database;
 using WebAPI.Database.Dtos;
+using WebAPI.Helpers;
 using WebAPI.Models;
 using WebAPI.Services.Base;
 
@@ -17,6 +18,30 @@ public class UserService : BaseService
 
         user.Id = _context.UserDtos.FirstOrDefaultAsync(x => x.Email == user.Email).Id;
         return user;
+    }
+
+    public async Task<User> InviteUserToProject(int userId, int projectId, int receiveId)
+    {
+        var project = await _context.ProjectDtos.FirstOrDefaultAsync(x => x.Id == projectId);
+        var userDto = await _context.UserDtos.FirstOrDefaultAsync(x => x.Id == userId);
+
+        if (project is null || userDto is null)
+            throw new InvalidDataException("Project or user is not found!");
+
+        var buildInvitationNotification = new Notification
+        {
+            Id = 0,
+            Description = $"You receive an invitation to {project.Name}",
+            ReceiveId = userId,
+            Invite = true,
+            SenderId = receiveId,
+            Title = "Invitation a new project"
+        };
+
+        var mappedUser = _mapper.Map<User>(userDto);
+        mappedUser.Notifications.ToList().Add(buildInvitationNotification);
+
+        return mappedUser;
     }
     
     public async Task<IEnumerable<User>> GetAllUsers()
@@ -47,7 +72,7 @@ public class UserService : BaseService
         data.Skills = user.Skills.ToString();
         data.Image = user.Image;
         data.Role = user.Role;
-        data.Status = user.Status;
+        data.Status = user.Status.ToString();
         data.Title = user.Title;
 
         var mapped = _mapper.Map<User>(data);

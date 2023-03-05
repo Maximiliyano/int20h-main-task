@@ -18,6 +18,10 @@ public class UserDto
     public string? Skills { get; set; }
     
     public string Title { get; set; }
+
+    public int ProjectId { get; set; }
+    
+    public int ResumeId { get; set; }
     
     public string? Role { get; set; }
     

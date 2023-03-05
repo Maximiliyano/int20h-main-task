@@ -55,7 +55,7 @@ public static class ModelBuilderExtensions
             Description = AppHelper.RandomizeCharacters(20),
             Steck = AppHelper.RandomizeCharacters(20),
             Capacity = AppHelper.RandomizeNumber(10, 30),
-            Rating = AppHelper.RandomizeNumber(1, 10),
+            Rating = AppHelper.RandomizeNumber(1, 5),
             StartDate = "5/03/2023",
             EndDate = "10/04/2024",
         };

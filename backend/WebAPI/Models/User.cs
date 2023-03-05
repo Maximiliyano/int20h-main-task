@@ -1,4 +1,6 @@
-﻿namespace WebAPI.Models;
+﻿using WebAPI.Enums;
+
+namespace WebAPI.Models;
 
 public sealed class User
 {
@@ -10,7 +12,7 @@ public sealed class User
     
     public string Name { get; set; }
     
-    public string Status { get; set; }
+    public UserState Status { get; set; }
     
     public string? Role { get; set; }
     
@@ -19,10 +21,12 @@ public sealed class User
     public string[] Skills { get; set; }
     
     public string Title { get; set; }
+    
+    public IEnumerable<Notification?> Notifications { get; set; }
 
     public IEnumerable<Achievement>? Achievements { get; set; }
     
-    public IEnumerable<int>? ProjectIds { get; set; }
+    public IEnumerable<Project>? Projects { get; set; }
     
-    public Resume? Resume { get; set; }
+    public IEnumerable<Resume?> Resume { get; set; }
 }

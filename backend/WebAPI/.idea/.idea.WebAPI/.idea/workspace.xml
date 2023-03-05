@@ -6,46 +6,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1cd1a89-a4cb-440a-aad1-6ba10f103344" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebAPI/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebAPI/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebAPI/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebAPI/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebAPI/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebAPI/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/Base/GlobalApiController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/ProjectController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/UserController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/Dtos/ProjectDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/Dtos/UserAchievementDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/Dtos/UserDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/Dtos/UserProjectDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/Dtos/UserResumeDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database/WebApiDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Enums/ProjectState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extensions/MapperResolver.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extensions/ModelBuilderExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extensions/ServiceExtension.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Helpers/AppHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Migrations/20230305075859_InitialCreate.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Migrations/20230305075859_InitialCreate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Migrations/WebApiDbContextModelSnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Achievement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Notification.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Project.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Resume.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/ProjectService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/UserService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/Class.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Class.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Base/BaseService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Base/BaseService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Class.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAPI.sln" beforeDir="false" afterPath="$PROJECT_DIR$/WebAPI.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controllers/NotificationController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/Dtos/ResumeDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Database/Dtos/UserNotificationDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Enums/UserState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Migrations/20230305103526_InitialCreate.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Migrations/20230305103526_InitialCreate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/NotificationService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebAPI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/UserController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/Dtos/UserDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Database/Dtos/UserDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/WebApiDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Database/WebApiDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Enums/ProjectState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Enums/ProjectState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Extensions/MapperResolver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Extensions/MapperResolver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Extensions/ModelBuilderExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Extensions/ModelBuilderExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/20230305075859_InitialCreate.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/20230305075859_InitialCreate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/WebApiDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/WebApiDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Notification.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Notification.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/UserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/UserService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +108,7 @@
       <updated>1677957856982</updated>
       <workItem from="1677957858669" duration="12232000" />
       <workItem from="1677975302714" duration="5070000" />
-      <workItem from="1677999431365" duration="6749000" />
+      <workItem from="1677999431365" duration="12119000" />
     </task>
     <servers />
   </component>

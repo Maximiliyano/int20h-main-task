@@ -11,13 +11,15 @@ public static class MapperResolver
         var config = new MapperConfiguration(cfg =>
         {
             cfg.CreateMap<UserDto, User>()
-                .ForMember(d => d.Skills, o => o
-                    .Ignore());
+                .ForMember(d => d.Skills, o => o.Ignore())
+                .ForMember(d => d.Status, o => o.Ignore());
 
             cfg.CreateMap<ProjectDto, Project>()
                 .ForMember(d => d.ProjectState, o => o.Ignore())
                 .ForMember(d => d.Members, o => o.Ignore())
                 .ForMember(d => d.Steck, o => o.Ignore());
+
+            cfg.CreateMap<UserNotificationDto, Notification>();
         });
 
         var mapper = new Mapper(config);

@@ -28,6 +28,12 @@ public class UserController : GlobalApiController
         return Ok(await _userService.CreateUser(user));
     }
 
+    [HttpPut("invite/{projectId}")]
+    public async Task<IActionResult> InviteUserToProject(int userId, int projectId, int receiveId)
+    {
+        return Ok(await _userService.InviteUserToProject(userId, projectId, receiveId));
+    }
+
     [HttpGet("all")]
     public async Task<IActionResult> GetAll()
     {

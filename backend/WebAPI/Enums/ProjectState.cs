@@ -2,8 +2,8 @@
 
 public enum ProjectState
 {
-    Open,
-    Ongoing,
-    Stopped,
-    Closed
+    Planning,
+    LookingForParticipants,
+    InProgress,
+    Completed
 }
